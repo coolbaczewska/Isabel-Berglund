@@ -1,0 +1,42 @@
+/*--------GRIDS--------*/
+
+.container {
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    grid-template-rows: 120px 120px 720px 120px auto 280px;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.brgr-menu {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.so-me {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.arrow {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.footer {
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
