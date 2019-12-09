@@ -21,6 +21,7 @@ body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
+    background-color: #fefefa;
 
 }
 
@@ -101,7 +102,7 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        min-height: 6vh;
+        min-height: 7vh;
         background-color: black;
 
     }
@@ -120,7 +121,7 @@ nav {
         overflow-x: hidden;
         position: absolute;
         right: 0px;
-        height: 96vh;
+        height: 97vh;
         top: 4vh;
         background-color: black;
         display: flex;
@@ -137,10 +138,13 @@ nav {
     }
 
     .nav-links a {
-        font-family: linotype-didot, serif;
+        /*
+        font-family: linotype-didot,
+        serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 16px;
+*/
+        font-size: 12px;
         color: white;
     }
 
@@ -262,6 +266,116 @@ h1 {
         "g1 g2 g2 g2 g2 g2 g2 g3 g3 g3 g3"
         "g1 . . . . . . g3 g3 g3 g3";
 }
+
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+    #hero-image {
+        margin-top: 8rem;
+        width: 85vw;
+    }
+
+    .vertical-some a {
+        writing-mode: vertical-rl;
+        width: 40%;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .title-wrap {
+        position: absolute;
+        top: 61vh;
+        right: 3vw;
+    }
+
+    .red-line {
+        border: 1px solid red;
+        width: 8.5rem;
+        position: absolute;
+        top: 8vh;
+        right: 13vw;
+    }
+
+
+    .landing-grid {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "g1 g2 ."
+            "g1 g3 .";
+    }
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    #hero-image {
+        margin-top: 6rem;
+        width: 100vw;
+    }
+
+    .title-wrap {
+        position: absolute;
+        top: 53vh;
+        left: 0vw;
+        width: 100vw;
+    }
+
+
+    .title-text {
+        font-family: linotype-didot, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5rem;
+        line-height: 1;
+        margin: 0;
+
+    }
+
+    .red-line {
+        border: 1px solid red;
+        width: 5rem;
+        position: absolute;
+        top: 3.5vh;
+        left: 62vw;
+    }
+
+    .landing-grid {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1f;
+        grid-template-areas:
+            "g1 g2"
+            "g1 g2";
+    }
+
+    .vertical-some a {
+        writing-mode: vertical-rl;
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .g2 {
+        padding-top: 0rem;
+
+    }
+
+    .g1 {
+        display: none;
+    }
+
+
+}
+
+
+
 
 
 
