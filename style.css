@@ -234,6 +234,54 @@ h1 {
     width: 50vw;
 }
 
+.scroll-down {
+    position: absolute;
+    left: 47%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.bounce {
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation: bounce 3.6s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    5.55556% {
+        transform: translateY(0);
+    }
+
+    11.11111% {
+        transform: translateY(0);
+    }
+
+    22.22222% {
+        transform: translateY(-15px);
+    }
+
+    27.77778% {
+        transform: translateY(0);
+    }
+
+    33.33333% {
+        transform: translateY(-15px);
+    }
+
+    44.44444% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .g1 {
     grid-area: g1;
