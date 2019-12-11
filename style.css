@@ -565,10 +565,64 @@ h2 {
 
     }
 
+}
 
+footer {
+    position: relative;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer div a {
+    margin: 8px;
+    font-size: 14px;
+}
+
+footer div img {
+    position: absolute;
+    width: 80px;
+    bottom: 4px;
+    right: 6px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+    footer div img {
+        width: 70px;
+    }
 
 }
 
+@media only screen and (max-width:700px) {
+
+    footer div img {
+        width: 50px;
+    }
+
+}
+
+
+footer:nth-child(2) {
+    display: flex;
+}
+
+.copyright {
+    font-size: 10px;
+    color: grey;
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    margin: 4px;
+}
 
 
 
