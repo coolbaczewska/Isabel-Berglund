@@ -234,6 +234,7 @@ h2 {
     right: 3vw;
 }
 
+
 .title-text {
     font-family: linotype-didot, serif;
     font-weight: 400;
@@ -638,7 +639,7 @@ footer div a {
     position: relative;
 }
 
-.title-wrap {
+.title-wrapper {
     position: absolute;
     width: 58vw;
     top: 20vh;
@@ -646,7 +647,7 @@ footer div a {
     left: 3vw;
 }
 
-.title-wrap hr {
+.title-wrapper hr {
     position: absolute;
     left: 42vw;
     border: 1px solid red;
@@ -716,7 +717,7 @@ footer div a {
             "a1 a2";
     }
 
-    .title-wrap {
+    .title-wrapper {
         position: absolute;
         width: 80vw;
         top: 51vh;
@@ -724,11 +725,11 @@ footer div a {
         left: 3vw;
     }
 
-    .title-wrap .title-text {
+    .title-wrapper .title-text {
         font-size: 4.5rem;
     }
 
-    .title-wrap hr {
+    .title-wrapper hr {
         position: absolute;
         left: 7vw;
         border: 1px solid red;
@@ -771,7 +772,7 @@ footer div a {
             "a1 a2";
     }
 
-    .title-wrap {
+    .title-wrapper {
         position: absolute;
         width: 95vw;
         top: 13vh;
@@ -779,11 +780,11 @@ footer div a {
         left: 0vw;
     }
 
-    .title-wrap .title-text {
+    .title-wrapper .title-text {
         font-size: 2.6rem;
     }
 
-    .title-wrap hr {
+    .title-wrapper hr {
         position: absolute;
         left: 8vw;
         border: 1px solid red;
