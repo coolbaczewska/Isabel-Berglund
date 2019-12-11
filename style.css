@@ -190,6 +190,26 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+
+}
+
+.top-header {
+    color: #FF0000;
+    font-size: 1rem;
+    line-height: 0.7;
+}
+
+.heading {
+    font-family: linotype-didot, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1;
+
+}
+
 #landing-section {
     width: 100vw;
     position: relative;
@@ -232,6 +252,54 @@ h1 {
 
 #hero-image {
     width: 50vw;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 47%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.bounce {
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation: bounce 3.6s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    5.55556% {
+        transform: translateY(0);
+    }
+
+    11.11111% {
+        transform: translateY(0);
+    }
+
+    22.22222% {
+        transform: translateY(-15px);
+    }
+
+    27.77778% {
+        transform: translateY(0);
+    }
+
+    33.33333% {
+        transform: translateY(-15px);
+    }
+
+    44.44444% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -373,6 +441,138 @@ h1 {
 
 
 }
+
+.social-art-section {
+    position: relative;
+    padding-top: 7rem;
+    text-align: center;
+    height: 90vh;
+}
+
+.social-art-section img {
+    width: 88%;
+}
+
+.social-art-section div {
+    position: absolute;
+    width: 50vw;
+    height: 40%;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    text-align: left;
+    background-color: #fefefa;
+}
+
+.social-art-section div a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.link-text {
+    font-size: 16px;
+}
+
+.link-text:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+
+}
+
+.icon {
+    height: 13px;
+    top: .125em;
+    position: relative;
+}
+
+.black-line {
+    position: absolute;
+    border: 0.5px solid black;
+    width: 15%;
+}
+
+.full-width-line {
+    border: 1 solid black;
+    width: 90%;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+    .social-art-section {
+        position: relative;
+        padding-top: 7rem;
+        text-align: center;
+        height: 50vh;
+    }
+
+    .social-art-section div {
+        position: absolute;
+        width: 50vw;
+        height: 40%;
+        left: 50%;
+        top: 59%;
+        transform: translate(-50%, -50%);
+        padding: 4rem;
+        text-align: left;
+        background-color: #fefefa;
+
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    .social-art-section img {
+        width: 100%;
+    }
+
+    .heading {
+        font-family: linotype-didot, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 1;
+
+    }
+
+    .social-art-section div {
+        position: absolute;
+        width: 50vw;
+        height: 40%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 4rem;
+        text-align: left;
+        background-color: #fefefa;
+
+    }
+
+
+
+}
+
+
+
+
+
 
 
 
