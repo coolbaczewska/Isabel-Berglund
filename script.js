@@ -18,7 +18,7 @@ function showPost(post){
     const template = document.querySelector(".postTemplate").content;
     const postCopy = template.cloneNode(true);
 
-    const title = postCopy.querySelector(".title");
+    const title = postCopy.querySelector(".project-title");
     title.textContent = post.title.rendered;
 
 

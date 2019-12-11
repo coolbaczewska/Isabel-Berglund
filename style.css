@@ -709,10 +709,13 @@ img.cover{
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
-.title{
+.project-title{
     font-size: 1.2rem;
 }
 /*---Layout for Artwork page---*/
 img.artworks-cover{
     border:1px solid #707070;
+}
+.art-title{
+    font-size: 1.2rem;
 }
