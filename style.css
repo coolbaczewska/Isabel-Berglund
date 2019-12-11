@@ -21,7 +21,7 @@ body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #fefefa;
+    background-color: white;
 
 }
 
@@ -680,14 +680,39 @@ footer:nth-child(2) {
 
 /*--------GRIDS FOR THE PODS--------*/
 
-
-/*
 #posts {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px 5px;
-    padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 120px;
 }
-*/
+
+#artworks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 5px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+}
+/*---Layout for Project page---*/
+.banner-title{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+img.cover{
+    border:1px solid #707070;
+}
+.tag-title{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.title{
+    font-size: 1.2rem;
+}
+/*---Layout for Artwork page---*/
+img.artworks-cover{
+    border:1px solid #707070;
+}

@@ -1,32 +1,32 @@
 window.addEventListener("DOMContentLoaded", getData)
 
 function getData(){
-    console.log("getData")
-    //fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/movies?_embed")
-    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/project?_embed")
+    //console.log("getData")
+
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed")
     .then(res=>res.json())
     .then(handleData)
 }
 
 function handleData(myData){
-    //console.log(myData)
+    console.log(myData)
     myData.forEach(showPost)
 }
 
 function showPost(post){
     console.log(post)
-    const template = document.querySelector(".postTemplate").content;
+    const template = document.querySelector(".artTemplate").content;
     const postCopy = template.cloneNode(true);
 
-    const title = postCopy.querySelector(".title");
-    title.textContent = post.title.rendered;
+    const artTitle = postCopy.querySelector(".art-title");
+    artTitle.textContent = post.title.rendered;
 
 
-    const img = postCopy.querySelector("img.cover");
+    const img = postCopy.querySelector("img.artworks-cover");
     const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     img.setAttribute("src", imgPath)
     img.setAttribute("alt", "Poster for event" + post.title.rendered)
 
-    document.querySelector("#posts").appendChild(postCopy)
+    document.querySelector("#artworks").appendChild(postCopy)
 }
 
