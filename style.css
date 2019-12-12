@@ -1028,3 +1028,60 @@ a.slide_btn {
     grid-column-start: 2;
     grid-row-start: 6;
 }
+
+
+
+
+.wrapper-contact {
+    display: grid;
+    grid-template-columns: auto 100px 650px;
+    grid-template-rows: 10px 150px 150px 30px 1590px auto;
+
+}
+
+.contact-item-1 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 3;
+    z-index: 10;
+     justify-self: end;
+    align-self: end;
+
+}
+
+
+.contact-data {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    justify-self: end;
+
+}
+
+.contact-item-4 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+}
+
+.contact-item-2{
+    display: inline-flex;
+}
+
+.contact-item-3{
+     display: inline-flex;
+}
+
+/*--------GRIDS FOR THE PODS--------*/
+
+
+/*
+#posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 50px 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+}
+*/
