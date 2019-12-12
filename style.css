@@ -985,6 +985,82 @@ a.slide_btn {
 }
 
 
+/*-----ABOUT-----*/
+
+#body-about{
+    background-color: black;
+}
+
+.about-text{
+    padding-left: 150px;
+    padding-right: 100px;
+      position: absolute;
+    top: 55vh;
+    left: 40vw;
+    color: white;
+}
+
+.artist-photo{
+  margin-left: 170px;
+}
+
+.nav-links-about {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links-about li {
+    list-style: none;
+}
+
+.nav-links-about a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+
+.nav-links-about a:hover {
+    color: #C2B4B4;
+}
+
+.nav-links-about{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.nav-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: black;
+}
+
+.title-text-about {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 6.5rem;
+    line-height: 1;
+    margin-top: 2.3rem;
+    color: white;
+}
+
+.title-wrap-about {
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+}
+
+.red-line-about{
+    border: 1px solid red;
+    width: 10rem;
+    position: absolute;
+    top: 32vh;
+}
 
 /*--------GRIDS--------*/
 
@@ -1034,8 +1110,8 @@ a.slide_btn {
 
 .wrapper-contact {
     display: grid;
-    grid-template-columns: auto 100px 650px;
-    grid-template-rows: 10px 150px 150px 30px 1590px auto;
+    grid-template-columns: auto 165px 650px;
+    grid-template-rows: 20px 150px 150px 30px 360px;
 
 }
 
@@ -1058,9 +1134,9 @@ a.slide_btn {
 }
 
 .contact-item-4 {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
+     position: absolute;
+    top: 12vh;
+    right: 17vw;
 
 }
 
