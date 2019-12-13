@@ -1283,6 +1283,12 @@ img.cover{
 .project-title{
     font-size: 1.2rem;
 }
+.red-line-template{
+    border: 1px solid red;
+    width: 10rem;
+    position: absolute;
+}
+
 /*---Layout for Artwork page---*/
 img.artworks-cover{
     border:1px solid #707070;
