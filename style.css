@@ -1062,7 +1062,11 @@ a.slide_btn {
     text-decoration: underline;
     text-decoration-color: black;
 }
-
+.red-line-about {
+    border: 1px solid red;
+    width: 10rem;
+    position: absolute;
+}
 @media screen and (max-width: 768px) {
 
     #navbar-contact {
@@ -1120,6 +1124,48 @@ a.slide_btn {
     #burger-about div{
         background-color: white;
     }
+
+    .wrapper-about {
+
+        grid-template-columns: 5% 30% 30% 30%;
+    grid-template-rows: 80px 250px 160px 150px auto;
+}
+
+    .title-wrap-about{
+         grid-column-start: 3;
+        grid-row-start: 3;
+    }
+
+    .red-line{
+       z-index: 10;
+         grid-column-start: 3;
+        grid-row-start: 3;
+    }
+
+
+    .artist-photo{
+    grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .isabel-photo{
+        width: 250px;
+    }
+
+    .about-text{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        font-size: 12px;
+    }
+
+    .red-line-about {
+    border: 1px solid red;
+    width: 5rem;
+    position: absolute;
+    top: 37vh;
+    left: 62vw;
+}
+
 }
 .nav-active {
     transform: translateX(0%);
