@@ -21,6 +21,9 @@ function showPost(post){
     const artTitle = postCopy.querySelector(".art-title");
     artTitle.textContent = post.title.rendered;
 
+    const a = postCopy.querySelector("a");
+    a.href="sub-art.html?id="+post.id;
+
 
     const img = postCopy.querySelector("img.artworks-cover");
     const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;

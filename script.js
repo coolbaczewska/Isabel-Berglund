@@ -21,6 +21,8 @@ function showPost(post){
     const title = postCopy.querySelector(".project-title");
     title.textContent = post.title.rendered;
 
+    const a = postCopy.querySelector("a");
+    a.href="sub-projects.html?id="+post.id;
 
     const img = postCopy.querySelector("img.cover");
     const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
