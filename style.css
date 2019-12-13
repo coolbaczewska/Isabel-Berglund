@@ -506,6 +506,20 @@ h2 {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
 
     .social-art-section {
@@ -990,48 +1004,31 @@ a.slide_btn {
 #body-about{
     background-color: black;
 }
+.wrapper-about {
+    display: grid;
+    grid-template-columns: 10% 30% 10% 40% 10%;
+    grid-template-rows: 120px 100px 150px 30px 320px;
+}
 
-.about-text{
-    padding-left: 150px;
-    padding-right: 100px;
-      position: absolute;
-    top: 55vh;
-    left: 40vw;
+.artist-photo {
+    grid-column-start: 2;
+}
+
+.title-wrap-about{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    z-index: 10;
     color: white;
 }
 
-.artist-photo{
-  margin-left: 170px;
+.about-text {
+    grid-column-start: 4;
+    grid-row-start: 4;
+     color: white;
 }
 
-.nav-links-about {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-}
-
-.nav-links-about li {
-    list-style: none;
-}
-
-.nav-links-about a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-size: 12px;
-}
-
-
-.nav-links-about a:hover {
-    color: #C2B4B4;
-}
-
-.nav-links-about{
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-
-.nav-about {
+#navbar-contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1039,79 +1036,131 @@ a.slide_btn {
     background-color: black;
 }
 
-.title-text-about {
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 6.5rem;
-    line-height: 1;
-    margin-top: 2.3rem;
+.nav-links-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links-contact li {
+    list-style: none;
+}
+
+.nav-links-contact a {
     color: white;
-}
-
-.title-wrap-about {
-    position: absolute;
-    top: 20vh;
-    right: 15vw;
-}
-
-.red-line-about{
-    border: 1px solid red;
-    width: 10rem;
-    position: absolute;
-    top: 32vh;
-}
-
-/*--------GRIDS--------*/
-
-.container {
-    display: grid;
-    grid-template-columns: 120px auto 120px;
-    grid-template-rows: 120px 120px 720px 120px auto 280px;
-}
-
-.logo {
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-.title {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.brgr-menu {
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-
-.content {
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.so-me {
-    grid-column-start: 1;
-    grid-row-start: 3;
-}
-
-.arrow {
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-
-.footer {
-    grid-column-start: 2;
-    grid-row-start: 6;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
 }
 
 
+.nav-links a:hover {
+    color: #C2B4B4;
+}
 
+.nav-links .current {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbar-contact {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 7vh;
+        background-color: black;
+        color: white;
+
+    }
+
+    navbar-contact div h1 {
+        font-size: 12px;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links-contact {
+        overflow-x: hidden;
+        position: absolute;
+        right: 0px;
+        height: 97vh;
+        top: 4vh;
+        background-color: #fefefa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 100;
+    }
+
+    .nav-links-contact li {
+        opacity: 0;
+
+    }
+
+    .nav-links-contact a {
+        font-size: 12px;
+        color: black;
+    }
+
+    .nav-burger {
+        display: block;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    #burger-about div{
+        background-color: white;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1-contact {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2-contact {
+    opacity: 0;
+}
+
+.toggle .line3-contact {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+
+
+
+
+
+/*-----CONTACT-----*/
 
 .wrapper-contact {
     display: grid;
-    grid-template-columns: auto 165px 650px;
-    grid-template-rows: 20px 150px 150px 30px 360px;
+    grid-template-columns: auto 60px 650px;
+    grid-template-rows: 120px 100px 150px 30px 320px;
 
 }
 
@@ -1120,38 +1169,94 @@ a.slide_btn {
     grid-row-start: 3;
     grid-column-end: 3;
     z-index: 10;
-     justify-self: end;
+    justify-self: end;
     align-self: end;
 
 }
-
 
 .contact-data {
     grid-column-start: 1;
     grid-row-start: 5;
     justify-self: end;
+    display: grid;
+    grid-template-columns: 30px 210px;
+    grid-template-rows: 30px 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 12px;
 
 }
 
 .contact-item-4 {
-     position: absolute;
-    top: 12vh;
-    right: 17vw;
-
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
-.contact-item-2{
-    display: inline-flex;
+.contact-item-number {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: center;
+    justify-self: start;
 }
 
-.contact-item-3{
-     display: inline-flex;
+.contact-item-mail {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: start;
 }
 
-/*--------GRIDS FOR THE PODS--------*/
+.contact-icon-1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.contact-icon-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+@media only screen and (max-width:700px) {
+    .wrapper-contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 100px 100px 320px;
+    }
+
+    .contact-item-1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 3;
+        z-index: 10;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .contact-data {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        z-index: 10;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .contact-item-4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        align-self: end;
+        justify-self: end;
+        margin-left: 30px;
+    }
+
+    .time-machine {
+        width: 90%;
+    }
 
 
-/*
+
+    /*--------GRIDS FOR THE PODS--------*/
+
+
+    /*
 #posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
