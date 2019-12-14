@@ -66,10 +66,15 @@
     <div class="banner-title">
         <h1>ART</h1>
     </div>
+    <form action="search-art.html" class="search-bar">
+    <input name="search" type="search">
+    <input type="submit" value="search">
+    </form>
+    <a href="art-works.html">Go Back</a>
+<section id="artworks">
 
-
-
-        <article class="subpage-article">
+    <template class="artTemplate">
+        <article>
             <header>
                 <div class="img_container">
                     <!--<a href="sub.html?id=94" class="subpage"><img src="" alt="" class="cover"></a>-->
@@ -77,14 +82,13 @@
                 </div>
                 <div class="tag-title">ARTWORKS//</div>
                 <div class="art-title">TITLE</div>
-                <div class="long-description">Description</div>
             </header>
-            <a href="art-works.html">Go Back</a>
-
+             <a href="sub-art.html?id=51"><div class="read-more">Read More</div></a>
+            <div class="red-line-template"></div>
 
         </article>
-
-
+    </template>
+    </section>
     <script src="main-art.js"></script>
     <script src="navigation.js"></script>
 </body>
