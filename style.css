@@ -1299,19 +1299,7 @@ a.slide_btn {
 
 
 
-    /*--------GRIDS FOR THE PODS--------*/
 
-
-    /*
-#posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 50px 5px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 120px;
-}
-*/
 /*---Layout for Project page---*/
 .banner-title{
     padding-top: 4rem;

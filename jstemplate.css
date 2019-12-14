@@ -2,12 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 #posts {
+    grid-column-start: 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 50px 5px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 120px;
+    grid-gap: 50px 80px;
+}
+
+#artworks{
+  grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 80px;
+}
+
+.posts-wrapper{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
 }
 
 /*---Project Template Style--*/
