@@ -1,21 +1,48 @@
 window.addEventListener("DOMContentLoaded", init)
 
 function init(){
+
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
 
     const id = urlParams.get("id");
+    const category = urlParams.get("category");
 
     if(search){
-        console.log("this is a search result");
+        //console.log("this is a search result")
         getSearchData();
-    }else if(id){
-        getSingleArt();
+    }else if (id){
+        getSingleProject();
+    }else if(category){
+        //catergory stuff
+        getCategoryData(category);
     }else{
-        console.log("Not searching")
-         getArtData();
+        //console.log("not a search result")
+        getArtData();
+    }
+    getNavigation()
+}
+
+function getNavigation(){
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/categories?per_page=100")
+    .then(res=>res.json())
+    .then(data=>{
+        //console.log(data)
+        data.forEach(addLink)
+    })
+}
+
+function addLink(oneItem){
+    //console.log(oneItem.name)
+    //document.querySelector(".categories").innerHTML += oneItem.name;
+    if(oneItem.parent == 53 && oneItem.count > 0){
+    const link = document.createElement("a");
+    link.textContent= oneItem.name;
+    link.setAttribute("href", "art-works.html?category="+oneItem.id)
+    document.querySelector(".categories").appendChild(link);
     }
 }
+
 function getSearchData(){
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -25,10 +52,19 @@ function getSearchData(){
     .then(res=>res.json())
     .then(handleData)
 }
+
 function getArtData(){
     //console.log("getData")
 
     fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed")
+    .then(res=>res.json())
+    .then(handleData)
+}
+
+function getCategoryData(catId){
+    console.log(catId)
+
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed&categories="+catId)
     .then(res=>res.json())
     .then(handleData)
 }

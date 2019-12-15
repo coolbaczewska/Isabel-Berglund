@@ -49,6 +49,10 @@ img.cover {
     padding-top: 1rem;
     font-weight: 900;
 }
+.read-more a{
+    text-decoration: none;
+    color: black;
+}
 
 .red-line-template {
     border: 1px solid red;
