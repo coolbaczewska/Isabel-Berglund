@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 /*---Grid for Project Template---*/
 #posts {
     grid-column-start: 2;
@@ -8,14 +8,14 @@
     grid-gap: 50px 80px;
 }
 
-#artworks{
-  grid-column-start: 2;
+#artworks {
+    grid-column-start: 2;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px 80px;
 }
 
-.posts-wrapper{
+.posts-wrapper {
     display: grid;
     grid-template-columns: 10% auto 10%;
 }
@@ -24,47 +24,53 @@
 
 
 /*---Project Template Style--*/
-.banner-title{
+.banner-title {
     padding-top: 4rem;
     padding-bottom: 2rem;
     text-align: center;
     letter-spacing: 5px;
 }
-img.cover{
-    border:1px solid #707070;
+
+img.cover {
+    border: 1px solid #707070;
 }
-.tag-title{
+
+.tag-title {
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
-.project-title{
+
+.project-title {
     font-size: 1.2rem;
 }
-.read-more{
+
+.read-more {
     font-size: 1rem;
     padding-top: 1rem;
     font-weight: 900;
 }
-.red-line-template{
+
+.red-line-template {
     border: 1px solid red;
     width: 5rem;
 }
 
 /*---Layout for Artwork page---*/
-img.artworks-cover{
-    border:1px solid #707070;
+img.artworks-cover {
+    border: 1px solid #707070;
 }
-.art-title{
+
+.art-title {
     font-size: 1.2rem;
 }
 
 /*------Search bar Styling------*/
-.search-bar{
+.search-bar {
     text-align: right;
     padding-right: 5rem;
 }
 
-input{
+input {
     background-color: #fefefa;
     color: black;
     border-width: 1px;
@@ -76,4 +82,41 @@ input{
     font-weight: 300;
     font-style: normal;
     padding-bottom: 1px;
+}
+
+
+
+
+/*    -----Layout for subpages-----*/
+
+.subpages-wrapper {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 20% auto 20%;
+}
+
+.subpage-article {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     grid-template-rows: auto 10% 15% 10% 15%;
+
+
+}
+
+.img_container {
+    grid-column-start: 1;
+}
+
+header {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.go-back{
+    grid-column-start: 2;
+    grid-row-start: 5;
 }
