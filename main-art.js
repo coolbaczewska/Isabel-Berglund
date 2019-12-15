@@ -12,7 +12,7 @@ function init(){
         //console.log("this is a search result")
         getSearchData();
     }else if (id){
-        getSingleProject();
+        getSingleArt();
     }else if(category){
         //catergory stuff
         getCategoryData(category);

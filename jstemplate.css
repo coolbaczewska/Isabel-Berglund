@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px 80px;
+    padding-bottom: 1rem;
 }
 
 #artworks {
@@ -13,6 +14,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 50px 80px;
+    padding-bottom: 1rem;
 }
 
 .posts-wrapper {
@@ -89,8 +91,6 @@ input {
 }
 
 
-
-
 /*    -----Layout for subpages-----*/
 
 .subpages-wrapper {
@@ -123,4 +123,10 @@ header {
 .go-back{
     grid-column-start: 2;
     grid-row-start: 5;
+}
+
+/*------Categories Styling------*/
+.categories a{
+    text-decoration: none;
+    color: black;
 }
