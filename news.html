@@ -23,7 +23,6 @@
                 "name": "Isabel Berglund"
             }
         }
-
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -44,9 +43,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="art-works.html">ART</a></li>
+            <li><a class="current" href="art-works.html">ART</a></li>
             <li><a href="projects.html">PROJECTS</a></li>
-            <li><a class="current" href="news.html">NEWS</a></li>
+            <li><a href="news.html">NEWS</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
@@ -59,7 +58,54 @@
 </header>
 
 <body>
-    <script src="script.js"></script>
+
+    <div class="banner-title">
+        <h1>NEWS</h1>
+    </div>
+<!--
+
+    <form action="search-art.html" class="search-bar">
+        <input name="search" type="search">
+        <input type="submit" value="search">
+    </form>
+-->
+
+    <div class="posts-wrapper">
+        <section id="news">
+
+            <template class="newsTemplate">
+                <article>
+                    <header>
+<!--
+                        <div class="img_container">
+                            <a href="sub.html?id=94" class="subpage"><img src="" alt="" class="cover"></a>
+                            <img src="" alt="" class="artworks-cover">
+                        </div>
+-->
+                        <div class="news-title">NEWS//</div>
+                        <div class="news-title"></div>
+                        <div class="institution"></div>
+                        <div class="place"></div>
+                        <div class="starting_date"></div>
+                        <div class="ending_date"></div>
+                    </header>
+
+                    <div class="red-line-template"></div>
+
+                </article>
+            </template></section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="news.html"></script>
     <script src="navigation.js"></script>
 </body>
 
