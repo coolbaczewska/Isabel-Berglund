@@ -6,35 +6,66 @@ function init(){
     const search = urlParams.get("search");
 
     const id = urlParams.get("id");
+    const category = urlParams.get("category");
 
     if(search){
-        console.log("this is a search result")
+        //console.log("this is a search result")
         getSearchData();
     }else if (id){
         getSingleProject();
+    }else if(category){
+        //catergory stuff
+        getCategoryData(category);
     }else{
-        console.log("not a search result")
+        //console.log("not a search result")
         getProjectData();
     }
+    getNavigation()
+}
 
+function getNavigation(){
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/categories?per_page=100")
+    .then(res=>res.json())
+    .then(data=>{
+        //console.log(data)
+        data.forEach(addLink)
+    })
+}
+
+function addLink(oneItem){
+    //console.log(oneItem.name)
+    //document.querySelector(".categories").innerHTML += oneItem.name;
+    if(oneItem.parent == 50 && oneItem.count > 0){
+    const link = document.createElement("a");
+    link.textContent= oneItem.name;
+    link.setAttribute("href", "projects.html?category="+oneItem.id)
+    document.querySelector(".categories").appendChild(link);
+    }
 }
 
 function getSearchData(){
-    console.log("getData")
+   // console.log("getData")
 
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
 
-    //fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/movies?_embed")
     fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/project?_embed&search="+search)
     .then(res=>res.json())
     .then(handleData)
 }
 
 function getProjectData(){
-    console.log("getData")
-    //fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/movies?_embed")
+    //console.log("getData")
+
     fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/project?_embed")
+    .then(res=>res.json())
+    .then(handleData)
+}
+
+function getCategoryData(catId){
+    console.log(catId)
+
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/project?_embed&categories="+catId)
     .then(res=>res.json())
     .then(handleData)
 }
@@ -50,7 +81,7 @@ function getSingleProject(){
 
 
 function showProject(project){
-    console.log(project)
+    //console.log(project)
     document.querySelector(".project-title").textContent= project.title.rendered;
     document.querySelector(".long-description").innerHTML=project.description;
 }
@@ -62,7 +93,7 @@ function handleData(myData){
 }
 
 function showPost(post){
-    console.log(post)
+    //console.log(post)
     const template = document.querySelector(".postTemplate").content;
     const postCopy = template.cloneNode(true);
 
