@@ -17,12 +17,25 @@
     padding-bottom: 1rem;
 }
 
+#news {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 80px;
+    padding-bottom: 1rem;
+}
+
 .posts-wrapper {
     display: grid;
     grid-template-columns: 10% auto 10%;
 }
 
+.half-width-line {
+    border: 1 solid black;
+    width: 64%;
+    float: left;
 
+}
 
 
 /*---Project Template Style--*/
