@@ -1,11 +1,5 @@
 /*----GENERAL STYLING----*/
 
-@import url("https://use.typekit.net/omr5swy.css");
-/*
-font-family: linotype-didot, serif;
-font-weight: 400;
-font-style: normal;
-*/
 
 @import url("https://use.typekit.net/omr5swy.css");
 /*
@@ -14,9 +8,6 @@ font-weight: 300;
 font-style: normal;
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-/*font-family: 'Roboto', sans-serif;*/
 
 body {
     margin: 0;
