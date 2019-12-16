@@ -23,7 +23,6 @@
                 "name": "Isabel Berglund"
             }
         }
-
     </script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -59,52 +58,56 @@
     </nav>
 </header>
 
-<body><div class="grid-whole-page">
-    <div class="banner-title">
-        <h1>PROJECTS</h1>
+
+<body>
+    <div class="grid-whole-page">
+
+        <div class="banner-title">
+            <h1>PROJECTS</h1>
+        </div>
+        <form action="search-projects.html" class="search-bar">
+            <input name="search" type="search">
+            <input type="submit" value="search">
+        </form>
+
+        <nav class="categories">
+            <a href="projects.html">All Projects</a>
+        </nav>
+
+        <div class="posts-wrapper">
+            <section id="posts">
+
+                <template class="postTemplate">
+                    <article>
+                        <header>
+                            <div class="img_container">
+                                <a href="sub-projects.html?id=51">
+                                    <img src="" alt="" class="cover"></a>
+                            </div>
+                            <div class="tag-title">PROJECTS//</div>
+                            <div class="project-title">TITLE</div>
+                        </header>
+
+                        <div class="read-more"><a href="sub-projects.html?id=51">Read More</a></div>
+                        <div class="red-line-template"></div>
+                        <hr class="half-width-line">
+                    </article>
+                </template>
+            </section>
+        </div>
+
+
+        <footer class="footer-projects">
+            <div>
+                <p class="copyright">© 2020 Isabel Berglund</p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/isabel_berglund/" target="_blank">INSTAGRAM</a>
+                <a href="https://www.pinterest.com/pin/107030928621970226/" target="_blank">PINTEREST</a>
+
+            </div>
+        </footer>
     </div>
-    <form action="search-projects.html" class="search-bar">
-    <input name="search" type="search">
-    <input type="submit" value="search">
-    </form>
-
-   <nav class="categories">
-    <a href="projects.html">All Projects</a>
-    </nav>
-
-    <div class="posts-wrapper">
-<section id="posts">
-
-    <template class="postTemplate">
-        <article>
-            <header>
-                <div class="img_container">
-                    <!--<a href="sub.html?id=94" class="subpage"><img src="" alt="" class="cover"></a>-->
-                <img src="" alt="" class="cover">
-                </div>
-                <div class="tag-title">PROJECTS//</div>
-                <div class="project-title">TITLE</div>
-            </header>
-
-            <div class="read-more"><a href="sub-projects.html?id=51">Read More</a></div>
-            <div class="red-line-template"></div>
-
-        </article>
-    </template>
-    </section></div>
-
-
-    <footer class="footer-projects">
-        <div>
-            <p class="copyright">© 2020 Isabel Berglund</p>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/isabel.berglund" target="_blank">FACEBOOK</a>
-            <a href="https://www.instagram.com/isabel_berglund/" target="_blank">INSTAGRAM</a>
-            <a href="https://www.pinterest.com/pin/107030928621970226/" target="_blank">PINTEREST</a>
-
-        </div>
-    </footer>  </div>
     <script src="main-projects.js"></script>
     <script src="navigation.js"></script>
 

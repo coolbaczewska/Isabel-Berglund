@@ -1,11 +1,5 @@
 /*----GENERAL STYLING----*/
 
-@import url("https://use.typekit.net/omr5swy.css");
-/*
-font-family: linotype-didot, serif;
-font-weight: 400;
-font-style: normal;
-*/
 
 @import url("https://use.typekit.net/omr5swy.css");
 /*
@@ -14,9 +8,6 @@ font-weight: 300;
 font-style: normal;
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-/*font-family: 'Roboto', sans-serif;*/
 
 body {
     margin: 0;
@@ -25,7 +16,7 @@ body {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #fefefa;
+    background-color: white;
 
 }
 
@@ -77,7 +68,6 @@ nav {
     text-decoration: underline;
     text-decoration-color: black;
 }
-
 
 
 .nav-burger {
@@ -251,7 +241,7 @@ h2 {
 
 
 #hero-image {
-    width: 50vw;
+    width: 52vw;
 }
 
 .scroll-down {
@@ -339,6 +329,8 @@ h2 {
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
 
     #hero-image {
+        position: absolute;
+        left: 7.5vw;
         margin-top: 8rem;
         width: 85vw;
     }
@@ -382,8 +374,11 @@ h2 {
 @media only screen and (max-width:700px) {
 
     #hero-image {
+        position: absolute;
+        top: 10vh;
+        left: 0;
         margin-top: 6rem;
-        width: 100vw;
+        width: 100vw
     }
 
     .title-wrap {
@@ -395,8 +390,8 @@ h2 {
 
 
     .title-text {
-        font-family: linotype-didot, serif;
-        font-weight: 400;
+        font-family: aktiv-grotesk, sans-serif;
+        font-weight: 300;
         font-style: normal;
         font-size: 3.5rem;
         line-height: 1;
@@ -456,11 +451,13 @@ h2 {
 .social-art-section div {
     position: absolute;
     width: 50vw;
-    height: 40%;
+    height: 38%;
     left: 50%;
     top: 73%;
     transform: translate(-50%, -50%);
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     text-align: left;
     background-color: #fefefa;
 }
@@ -472,6 +469,10 @@ h2 {
     font-style: normal;
     font-size: 1.1rem;
     position: relative;
+}
+
+.social-art-section div p {
+    line-height: 1.7;
 }
 
 .link-text {
@@ -506,18 +507,22 @@ h2 {
 
 }
 
+.read-more {
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 900;
+}
 
+.read-more a {
+    text-decoration: none;
+    color: black;
+}
 
-
-
-
-
-
-
-
-
-
-
+.red-line-project {
+    margin-left: 3rem;
+    border: 1px solid red;
+    width: 6rem;
+}
 
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
@@ -536,9 +541,9 @@ h2 {
         left: 50%;
         top: 59%;
         transform: translate(-50%, -50%);
-        padding: 4rem;
+        padding: 3rem;
         text-align: left;
-        background-color: #fefefa;
+        background-color: white;
 
     }
 
@@ -554,8 +559,8 @@ h2 {
     }
 
     .heading {
-        font-family: linotype-didot, serif;
-        font-weight: 400;
+        font-family: aktiv-grotesk, sans-serif;
+        font-weight: 300;
         font-style: normal;
         font-size: 2rem;
         line-height: 1;
@@ -564,12 +569,12 @@ h2 {
 
     .social-art-section div {
         position: absolute;
-        width: 50vw;
+        width: 70vw;
         height: 40%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        padding: 4rem;
+        padding: 2rem;
         text-align: left;
         background-color: #fefefa;
 
@@ -651,7 +656,7 @@ footer div a {
 .title-wrapper {
     position: absolute;
     width: 58vw;
-    top: 20vh;
+    top: 8vh;
     text-align: right;
     left: 3vw;
 }
@@ -673,6 +678,10 @@ footer div a {
     grid-area: a2;
     width: 40vw;
     padding: 2.5vw;
+}
+
+.a2 p {
+    line-height: 1.5;
 }
 
 .a3 {
@@ -729,7 +738,7 @@ footer div a {
     .title-wrapper {
         position: absolute;
         width: 80vw;
-        top: 51vh;
+        top: 45vh;
         text-align: right;
         left: 3vw;
     }
@@ -740,7 +749,7 @@ footer div a {
 
     .title-wrapper hr {
         position: absolute;
-        left: 7vw;
+        left: 60vw;
         border: 1px solid red;
         width: 140px;
     }
@@ -784,7 +793,7 @@ footer div a {
     .title-wrapper {
         position: absolute;
         width: 95vw;
-        top: 13vh;
+        top: 10vh;
         text-align: right;
         left: 0vw;
     }
@@ -795,7 +804,7 @@ footer div a {
 
     .title-wrapper hr {
         position: absolute;
-        left: 8vw;
+        left: 25vw;
         border: 1px solid red;
         width: 95px;
         top: 1.5vh;
@@ -1001,9 +1010,10 @@ a.slide_btn {
 
 /*-----ABOUT-----*/
 
-#body-about{
+#body-about {
     background-color: black;
 }
+
 .wrapper-about {
     display: grid;
     grid-template-columns: 10% 30% 10% 40% 10%;
@@ -1014,7 +1024,7 @@ a.slide_btn {
     grid-column-start: 2;
 }
 
-.title-wrap-about{
+.title-wrap-about {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -1025,7 +1035,9 @@ a.slide_btn {
 .about-text {
     grid-column-start: 4;
     grid-row-start: 4;
-     color: white;
+    color: white;
+    line-height: 1.5rem;
+
 }
 
 #navbar-contact {
@@ -1062,11 +1074,13 @@ a.slide_btn {
     text-decoration: underline;
     text-decoration-color: black;
 }
+
 .red-line-about {
     border: 1px solid red;
     width: 10rem;
     position: absolute;
 }
+
 @media screen and (max-width: 768px) {
 
     #navbar-contact {
@@ -1121,37 +1135,38 @@ a.slide_btn {
         z-index: 200;
     }
 
-    #burger-about div{
+    #burger-about div {
         background-color: white;
     }
 
     .wrapper-about {
 
         grid-template-columns: 5% 30% 30% 30%;
-    grid-template-rows: 80px 250px 160px 150px auto;
-}
+        grid-template-rows: 80px 250px 160px 150px auto;
+    }
 
-    .title-wrap-about{
-         grid-column-start: 3;
+    .title-wrap-about {
+        grid-column-start: 3;
         grid-row-start: 3;
     }
 
-    .red-line{
-       z-index: 10;
-         grid-column-start: 3;
+    .red-line {
+        z-index: 10;
+        grid-column-start: 3;
         grid-row-start: 3;
     }
 
 
-    .artist-photo{
-    grid-column-start: 2;
+    .artist-photo {
+        grid-column-start: 2;
         grid-row-start: 2;
     }
-    .isabel-photo{
+
+    .isabel-photo {
         width: 250px;
     }
 
-    .about-text{
+    .about-text {
         grid-column-start: 2;
         grid-column-end: 5;
         grid-row-start: 4;
@@ -1159,14 +1174,15 @@ a.slide_btn {
     }
 
     .red-line-about {
-    border: 1px solid red;
-    width: 5rem;
-    position: absolute;
-    top: 37vh;
-    left: 62vw;
-}
+        border: 1px solid red;
+        width: 5rem;
+        position: absolute;
+        top: 37vh;
+        left: 62vw;
+    }
 
 }
+
 .nav-active {
     transform: translateX(0%);
 }
@@ -1261,6 +1277,12 @@ a.slide_btn {
     grid-row-start: 2;
 }
 
+.icon-size {
+    height: 1.5rem;
+    top: .125em;
+    position: relative;
+}
+
 @media only screen and (max-width:700px) {
     .wrapper-contact {
         display: grid;
@@ -1299,36 +1321,40 @@ a.slide_btn {
 
 
 
+    /*---Layout for Project page---*/
+    .banner-title {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 5px;
+    }
 
-/*---Layout for Project page---*/
-.banner-title{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    letter-spacing: 5px;
-}
-img.cover{
-    border:1px solid #707070;
-}
-.tag-title{
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-}
-.project-title{
-    font-size: 1.2rem;
-}
-.red-line-template{
-    border: 1px solid red;
-    width: 10rem;
-    position: absolute;
-}
+    img.cover {
+        border: 1px solid #707070;
+    }
 
-/*---Layout for Artwork page---*/
-img.artworks-cover{
-    border:1px solid #707070;
-}
-.art-title{
-    font-size: 1.2rem;
-}
+    .tag-title {
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
 
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .red-line-template {
+        border: 1px solid red;
+        width: 10rem;
+        position: absolute;
+    }
+
+
+    /*---Layout for Artwork page---*/
+    img.artworks-cover {
+        border: 1px solid #707070;
+    }
+
+    .art-title {
+        font-size: 1.2rem;
+    }
 

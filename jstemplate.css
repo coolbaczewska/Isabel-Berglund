@@ -5,16 +5,29 @@
     grid-column-start: 2;
 
     display: grid;
+
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 50px 80px;
+
     padding-bottom: 1rem;
 }
 
 #artworks {
     grid-column-start: 2;
     display: grid;
+
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 50px 80px;
+
+    padding-bottom: 1rem;
+}
+
+#news {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 50px;
+
     padding-bottom: 1rem;
 }
 
@@ -25,7 +38,12 @@
     grid-template-columns: 10% auto 10%;
 }
 
+.half-width-line {
+    border: 1 solid black;
+    width: 100%;
+    float: left;
 
+}
 
 
 /*---Project Template Style--*/
@@ -78,6 +96,13 @@ img.artworks-cover {
    font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 40px;
+}
+
+/*---------News Style---------*/
+img.news-cover{
+    width: 300px;
+    height: 300px;
+
 }
 
 /*------Search bar Styling------*/
@@ -198,8 +223,22 @@ header {
 
 
 
+
    .grid-whole-page{
         display: grid;
         grid-template-columns: 5% 90% 5%;
             grid-template-rows: 4% 5% 5% 100% 6%;
     }
+
+/*------Subpage Styling--------*/
+.sub-art-title{
+    padding-bottom: 1rem;
+}
+.sub-project-title{
+    padding-bottom: 1rem;
+}
+.go-back{
+    text-decoration: underline;
+    color: black;
+}
+
