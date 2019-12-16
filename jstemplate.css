@@ -32,7 +32,7 @@
 
 .half-width-line {
     border: 1 solid black;
-    width: 64%;
+    width: 100%;
     float: left;
 
 }
