@@ -143,3 +143,15 @@ header {
     text-decoration: none;
     color: black;
 }
+
+/*------Subpage Styling--------*/
+.sub-art-title{
+    padding-bottom: 1rem;
+}
+.sub-project-title{
+    padding-bottom: 1rem;
+}
+.go-back{
+    text-decoration: underline;
+    color: black;
+}

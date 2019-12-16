@@ -80,7 +80,7 @@ function getSingleArt(){
 
 function showArt(art){
     console.log(art)
-    document.querySelector(".art-title").textContent=art.title.rendered;
+    document.querySelector(".sub-art-title").textContent=art.title.rendered;
     document.querySelector(".long-description").innerHTML=art.description;
     document.querySelector("img.artworks-cover");
     //const imgPath = art._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
