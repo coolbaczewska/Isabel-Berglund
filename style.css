@@ -517,8 +517,21 @@ h2 {
 
 }
 
+.read-more {
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 900;
+}
 
-
+.read-more a{
+    text-decoration: none;
+    color: black;
+}
+.red-line-project {
+    margin-left: 3rem;
+    border: 1px solid red;
+    width: 6rem;
+}
 
 
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
@@ -1032,6 +1045,8 @@ a.slide_btn {
     grid-column-start: 4;
     grid-row-start: 4;
     color: white;
+    line-height: 1.5rem;
+
 }
 
 #navbar-contact {
