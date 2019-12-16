@@ -79,7 +79,6 @@ nav {
 }
 
 
-
 .nav-burger {
     display: none;
 }
@@ -523,10 +522,11 @@ h2 {
     font-weight: 900;
 }
 
-.read-more a{
+.read-more a {
     text-decoration: none;
     color: black;
 }
+
 .red-line-project {
     margin-left: 3rem;
     border: 1px solid red;
@@ -665,7 +665,7 @@ footer div a {
 .title-wrapper {
     position: absolute;
     width: 58vw;
-    top: 14vh;
+    top: 8vh;
     text-align: right;
     left: 3vw;
 }
