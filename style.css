@@ -1034,7 +1034,8 @@ a.slide_btn {
 .about-text {
     grid-column-start: 4;
     grid-row-start: 4;
-     color: white;
+    color: white;
+    line-height: 1.5rem;
 }
 
 #navbar-contact {
