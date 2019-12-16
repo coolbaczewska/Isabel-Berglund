@@ -33,9 +33,11 @@ function showPost(post){
     const newsEndDate = postCopy.querySelector(".ending_date");
     newsEndDate.textContent = "End: " + post.ending_date;
 
-    //const newsImg = postCopy.querySelector("img .news-cover");
-    //const ImgPath = post.image;
-    //newsImg.setAttribute("src", ImgPath)
+    const img = postCopy.querySelector("img.news-cover");
+    const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+    img.setAttribute("src", imgPath)
+    img.setAttribute("alt", "Poster for event" + post.title.rendered)
+
 
 
     document.querySelector("#news").appendChild(postCopy)
