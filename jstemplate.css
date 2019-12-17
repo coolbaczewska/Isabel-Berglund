@@ -75,9 +75,11 @@ img.cover {
 .read-more{
     font-size: 1rem;
     padding-top: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     color: black;
+    font-family: aktiv-grotesk black, sans-serif;
+    font-style: normal;
 
 }
 .read-more a{
