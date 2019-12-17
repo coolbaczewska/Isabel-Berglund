@@ -53,6 +53,35 @@ function getSearchData(){
     .then(handleData)
 }
 
+
+//
+//function emptySearch(){
+//
+//    console.log("HI");
+//
+//    const urlParams = new URLSearchParams(window.location.search);
+//    const search = urlParams.get("search");
+//
+//
+//
+//    if (search === 0){
+//        const searchPage = document.querySelector(".searchPage");
+//
+//        searchPage.classList.add(".display-search")
+//    }
+//}
+//
+
+
+
+
+
+
+
+
+
+
+
 function getArtData(){
     //console.log("getData")
 

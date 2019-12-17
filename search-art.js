@@ -10,6 +10,14 @@ function getData(){
     .then(handleData)
 }
 
+
+
+
+
+
+
+
+
 function handleData(myData){
     console.log(myData)
     myData.forEach(showPost)

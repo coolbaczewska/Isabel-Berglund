@@ -76,6 +76,9 @@ img.cover {
     font-size: 1rem;
     padding-top: 1rem;
     font-weight: 900;
+    text-decoration: none;
+    color: black;
+
 }
 .read-more a{
     text-decoration: none;
@@ -242,3 +245,14 @@ header {
     color: black;
 }
 
+
+
+.grid-whole-page-search{
+    display: grid;
+        grid-template-columns: 5% 90% 5%;
+            grid-template-rows: 20% 5% 5% 100% 6%;
+}
+
+.display-search{
+    display: none;
+}
