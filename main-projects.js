@@ -84,6 +84,7 @@ function showProject(project){
     //console.log(project)
     document.querySelector(".project-title").textContent= project.title.rendered;
     document.querySelector(".long-description").innerHTML=project.description;
+    document.querySelector(".sub-img").innerHTML=project.content.rendered;
 }
 }
 
