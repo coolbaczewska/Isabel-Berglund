@@ -111,7 +111,8 @@ function showArt(art){
     console.log(art)
     document.querySelector(".sub-art-title").textContent=art.title.rendered;
     document.querySelector(".long-description").innerHTML=art.description;
-    document.querySelector(".sub-img").innerHTML=art.content.rendered;
+    document.querySelector(".sub-image").innerHTML= art.content.rendered;
+
 
 }
 }
@@ -134,6 +135,7 @@ function showPost(post){
 
     const suba = postCopy.querySelector(".sub-a");
     suba.href="sub-art.html?id="+post.id;
+
 
     const img = postCopy.querySelector("img.artworks-cover");
     const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
