@@ -58,6 +58,7 @@
 
 img.cover {
     border: 1px solid #707070;
+    width: 100%
 }
 
 .tag-title {
@@ -96,6 +97,7 @@ img.cover {
 /*---Layout for Artwork page---*/
 img.artworks-cover {
     border: 1px solid #707070;
+    width: 100%;
 }
 
 .art-title {
