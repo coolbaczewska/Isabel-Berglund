@@ -39,7 +39,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    background-color: #fefefa;
+    background-color: white;
 }
 
 .nav-links {
@@ -97,7 +97,7 @@ nav {
         justify-content: space-around;
         align-items: center;
         min-height: 7vh;
-        background-color: #fefefa;
+        background-color: white;
 
     }
 
@@ -117,7 +117,7 @@ nav {
         right: 0px;
         height: 97vh;
         top: 4vh;
-        background-color: #fefefa;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -295,19 +295,19 @@ h2 {
 
 .g1 {
     grid-area: g1;
-    /*    background-color: fuchsia;*/
+
 
 }
 
 .g2 {
     grid-area: g2;
-    /*    background-color: aqua;*/
+
     padding-top: 6rem;
 }
 
 .g3 {
     grid-area: g3;
-    /*    background-color: hotpink;*/
+
 }
 
 
@@ -459,7 +459,7 @@ h2 {
     padding-left: 6rem;
     padding-right: 6rem;
     text-align: left;
-    background-color: #fefefa;
+    background-color: white;
 }
 
 .social-art-section div a {
@@ -576,7 +576,7 @@ h2 {
         transform: translate(-50%, -50%);
         padding: 2rem;
         text-align: left;
-        background-color: #fefefa;
+        background-color: white;
 
     }
 
@@ -1109,7 +1109,7 @@ a.slide_btn {
         right: 0px;
         height: 97vh;
         top: 4vh;
-        background-color: #fefefa;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
