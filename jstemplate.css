@@ -296,8 +296,8 @@ input {
 
     .grid-whole-page {
         display: grid;
-        grid-template-columns: 1% auto 1%;
-        grid-template-rows: 1% 2% 2% 100% 6%;
+
+        grid-template-rows: 2% 2% 2% 100% 6%;
     }
 
 
