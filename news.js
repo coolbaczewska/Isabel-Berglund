@@ -33,10 +33,13 @@ function showPost(post){
     const newsEndDate = postCopy.querySelector(".ending_date");
     newsEndDate.textContent = "End: " + post.ending_date;
 
-    const img = postCopy.querySelector("img.news-cover");
-    const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-    img.setAttribute("src", imgPath)
-    img.setAttribute("alt", "Poster for event" + post.title.rendered)
+    const imgNews = postCopy.querySelector(".news-img");
+    imgNews.innerHTML = post.content.rendered;
+
+    //const img = postCopy.querySelector("img.news-cover");
+    //const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+    //img.setAttribute("src", imgPath)
+   //img.setAttribute("alt", "Poster for event" + post.title.rendered)
 
 
 

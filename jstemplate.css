@@ -75,9 +75,11 @@ img.cover {
 .read-more {
     font-size: 1rem;
     padding-top: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     color: black;
+    font-family: aktiv-grotesk black, sans-serif;
+    font-style: normal;
 
 }
 
@@ -87,8 +89,8 @@ img.cover {
 }
 
 .red-line-template {
-    border: 1px solid red;
-    width: 5rem;
+    border: 0.5px solid red;
+    width: 3rem;
 }
 
 /*---Layout for Artwork page---*/
