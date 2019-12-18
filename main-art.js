@@ -110,19 +110,13 @@ function getSingleArt() {
         .then(showArt)
 
 
-<<<<<<< HEAD
-    function showArt(art) {
-        console.log(art)
-        document.querySelector(".sub-art-title").textContent = art.title.rendered;
-        document.querySelector(".long-description").innerHTML = art.description;
-        document.querySelector(".sub-image").innerHTML = art.content.rendered;
-=======
+
 function showArt(art){
     console.log(art)
     document.querySelector(".sub-art-title").textContent=art.title.rendered;
     document.querySelector(".long-description").innerHTML=art.description;
     document.querySelector(".sub-img").innerHTML= art.content.rendered;
->>>>>>> Isabel-Berglund/master
+
 
 
     }
