@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", init)
 
-function init(){
+function init() {
 
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
@@ -8,49 +8,49 @@ function init(){
     const id = urlParams.get("id");
     const category = urlParams.get("category");
 
-    if(search){
+    if (search) {
         //console.log("this is a search result")
         getSearchData();
-    }else if (id){
+    } else if (id) {
         getSingleArt();
-    }else if(category){
+    } else if (category) {
         //catergory stuff
         getCategoryData(category);
-    }else{
+    } else {
         //console.log("not a search result")
         getArtData();
     }
     getNavigation()
 }
 
-function getNavigation(){
+function getNavigation() {
     fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/categories?per_page=100")
-    .then(res=>res.json())
-    .then(data=>{
-        //console.log(data)
-        data.forEach(addLink)
-    })
+        .then(res => res.json())
+        .then(data => {
+            //console.log(data)
+            data.forEach(addLink)
+        })
 }
 
-function addLink(oneItem){
+function addLink(oneItem) {
     //console.log(oneItem.name)
     //document.querySelector(".categories").innerHTML += oneItem.name;
-    if(oneItem.parent == 53 && oneItem.count > 0){
-    const link = document.createElement("a");
-    link.textContent= oneItem.name;
-    link.setAttribute("href", "art-works.html?category="+oneItem.id)
-    document.querySelector(".categories").appendChild(link);
+    if (oneItem.parent == 53 && oneItem.count > 0) {
+        const link = document.createElement("a");
+        link.textContent = oneItem.name;
+        link.setAttribute("href", "art-works.html?category=" + oneItem.id)
+        document.querySelector(".categories").appendChild(link);
     }
 }
 
-function getSearchData(){
+function getSearchData() {
 
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
 
-    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed&search="+search)
-    .then(res=>res.json())
-    .then(handleData)
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed&search=" + search)
+        .then(res => res.json())
+        .then(handleData)
 }
 
 
@@ -80,31 +80,35 @@ function getSearchData(){
 
 
 
-
-
-function getArtData(){
-    //console.log("getData")
-
+function getArtData() {
     fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed")
-    .then(res=>res.json())
-    .then(handleData)
+        .then(res => res.json())
+        .then(handleData)
 }
 
-function getCategoryData(catId){
+
+
+
+
+
+
+
+function getCategoryData(catId) {
     console.log(catId)
 
-    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed&categories="+catId)
-    .then(res=>res.json())
-    .then(handleData)
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork?_embed&categories=" + catId)
+        .then(res => res.json())
+        .then(handleData)
 }
 
-function getSingleArt(){
+function getSingleArt() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
-//console.log(id)
-    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork/"+id)
-.then(res=>res.json())
-.then (showArt)
+    //console.log(id)
+    fetch("http://dredesigns.dk/MyWordpress/wp-json/wp/v2/artwork/" + id)
+        .then(res => res.json())
+        .then(showArt)
+
 
 
 function showArt(art){
@@ -114,16 +118,18 @@ function showArt(art){
     document.querySelector(".sub-img").innerHTML= art.content.rendered;
 
 
-}
+
+    }
 }
 
-function handleData(myData){
-    //console.log(myData)
+
+function handleData(myData) {
     myData.forEach(showPost)
 }
 
-function showPost(post){
-    console.log(post)
+
+function showPost(post) {
+
     const template = document.querySelector(".artTemplate").content;
     const postCopy = template.cloneNode(true);
 
@@ -131,11 +137,10 @@ function showPost(post){
     artTitle.textContent = post.title.rendered;
 
     const a = postCopy.querySelector(".subpage-a");
-    a.href="sub-art.html?id="+post.id;
+    a.href = "sub-art.html?id=" + post.id;
 
     const suba = postCopy.querySelector(".sub-a");
-    suba.href="sub-art.html?id="+post.id;
-
+    suba.href = "sub-art.html?id=" + post.id;
 
     const img = postCopy.querySelector("img.artworks-cover");
     const imgPath = post._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
