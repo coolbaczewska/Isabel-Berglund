@@ -248,7 +248,7 @@ input {
 .grid-whole-page {
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 4% 5% 5% 100% 6%;
+    grid-template-rows: 40px 80px 60px 100% 6%;
 }
 
 /*------Subpage Styling--------*/
@@ -348,3 +348,9 @@ input {
     .share {
     grid-template-columns: 18% 10% 10% auto;
 }
+
+
+/*
+
+.grid-whole-page-category{
+    grid-template-rows: 10% 5% 10% 100% 6%; }*/
